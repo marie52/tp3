@@ -1,0 +1,67 @@
+main{
+  margin: 0 0 0 10px;
+}
+
+#gauche>#figure_photo{
+  display: inherit;
+}
+figure>img{
+    flex: 1 1 auto;
+    flex-basis: 400px;
+    display: inline-block;
+    width: 400px;
+    border:thick solid black;
+    margin: 5px;
+  
+}
+
+figure>figcaption{
+    font-family: cursive;
+    font-size: 14px;
+}
+
+caption{
+    caption-side: top;
+}
+
+table, caption{
+    margin: auto;
+}
+
+table {  
+    width: 80%;
+    height: 300px;
+    border-collapse: collapse;
+}
+.td {
+    width: 80%;
+    height: 60px;
+}
+tr{
+    height: 60px;
+    vertical-align: middle;
+}
+
+tr, th, td{
+    border-bottom: thin solid #7371da;
+}
+th{color:hsl(241, 79%, 62%);}
+tr~tr{color:hsl(241, 59%, 65%);}
+tr~tr:hover{
+    color:hsl(241, 92%, 70%);
+    font-weight: bold;
+}
+
+aside ul~ul>li{
+  list-style-image: url('icones/icon_pdf.gif');   
+}
+
+#liens{
+  margin-left: 10px;
+  padding-left: 20px;
+}
+#premiers_skis{
+  width: auto;
+  height: auto;
+  
+}

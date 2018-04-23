@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>IFT1144- Tp3</title>
+        
+        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-indigo.min.css" />
+        <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+        <link href="css/styles.css" rel="stylesheet"/>
+    </head>
+    
+    <body>
+        <div class="mdl-layout  mdl-js-layout  mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <h1>Le Ski Alpin</h1>
+                
+                    <div class="mdl-layout-spacer"></div>
+                    <nav class="mdl-navigation">
+                        <a class="mdl-navigation__link" href="index.html">Page d'acceuil</a>
+                        <a class="mdl-navigation__link" href="categories.html">Disciplines de ski alpin</a>
+                        <a class="mdl-navigation__link" href="evenements.html"> Événements</a>
+                        <a class="mdl-navigation__link" href="surnous.html">Sur nous</a>
+                        <a class="mdl-navigation__link" href="joindre.html">Nous joindre</a>
+                        <a class="mdl-navigation__link" href="http://www-desi.iro.umontreal.ca/~votreNomUsager/nomDossierSecret"> Site publique</a>
+                    </nav>
+                </div>
+            </header>
+    
+            <main>
+                <h2>Les disciplines et les épreuves dans la compétition de ski alpin</h2>
+            
+                <div class="mdl-tabs mdl-js-tabs">
+                    <!-- lien internerves vers les autres divisions-->
+                    <div class="mdl-tabs__tab-bar">
+                        <a class="mdl-tabs__tab is active" href="#slm">Slalom et Combiné Alpin</a>
+                        <a class="mdl-tabs__tab" href="#slmg"> Super G et Descente</a>
+                    </div>
+                    <!-- Division de la première catégorie -->    
+                    <div class="mdl-tabs__panel is-active" id="slm">
+                        <div class="mdl-card">
+                        
+                            <div class="mdl-card__title" onclick="toggleContent(event)">
+                                <h3> Slalom et Combiné Alpin</h3>
+                            </div>
+                        
+                            <div class="mdl-card__media" onclick="toggleContent(event)">
+                                <img src="images/slalom.jpg" width="540" height="339" alt="slalom"/>
+                                <img src="images/geant.jpg" width="540" height="340" alt="slalom géant"/>
+                            </div>
+                            
+                            <div class="mdl-card__supporting-text">
+                                <p>Le slalom est l'épreuve du ski alpin qui se dispute sur la piste la plus courte et qui offre les virages les plus rapides. Le slalom géant comporte moins de virages et des courbes moins serrées. Dans les deux épreuves, chaque skieur effectue deux descentes. Les temps sont additionnés et le skieur qui affiche le meilleur temps consolidé l'emporte. Dans le combiné alpin, un passage sur piste, la piste de descente raccourcie, est suivi d'un passage en slalom. Les temps sont additionnés pour déterminer le vainqueur.</p>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <!-- division de la 2e catégorie -->
+                    <div class="mdl-tabs__panel" id="slmg">
+                        <div class="mdl-card">
+                        
+                            <div class="mdl-card__title" onclick="toggleContent(event)">
+                            <h3> SUPER G et Descente</h3>
+                            </div>
+                        
+                            <div class="mdl-card__media" onclick="toggleContent(event)">   
+                            <img src="images/skisuperg.jpg" width="300" height="339" alt="Super G"/>
+                            <img src="images/descente.jpg" width="300" height="339" alt="descente"/> 
+                            </div>
+                            
+                            <div class="mdl-card__supporting-text">
+                            <p>La descente se court sur la plus longue piste et offre les plus hautes vitesses du ski alpin. Le Super-G, pour slalom "super géant", associe la vitesse de la descente à une précision en virage propre au slalom géant. Dans ces épreuves, chaque skieur effectue une descente. Le vainqueur est celui qui réalise le meilleur temps.</p>
+                        </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+            </main>
+    
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section"> 
+                    <a href="http://validator.w3.org/check?uri=referer">
+                        <img src="http://www.w3.org/html/logo/badge/html5-badge-h-semantics.png"
+                         width="133" height="64"
+                         alt="HTML5 Powered with Semantics"
+                         title="HTML5 Powered with Semantics"/>
+                    </a>
+                </div>
+                <div class="mdl-mini-footer__middle-section">
+                    <p> Droits d'auteurs &copy; Marie-Laurence Paquette (20109183) <time datetime="2018-02-14T23:55">Le 21 mars 2018.</time></p>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img src="http://www.w3.org/Icons/valid-css.png"
+                             width="133" height="64" 
+                             alt="CSS validator"
+                             title="CSS validator"/>
+                    </a>
+                </div>
+            </footer>
+            
+        </div>
+      <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+      <script src="script.js"></script>
+    </body>
+</html>
